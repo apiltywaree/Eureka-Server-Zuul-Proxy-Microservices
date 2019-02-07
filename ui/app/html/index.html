@@ -6,27 +6,19 @@
 
 <div ng-app="myApp" ng-controller="myCtrl as c">
   <p>Username : <input type="text" ng-model="name"></p>
-   <p>Quote : <input type="text" ng-model="quote"></p>
-
+  <p>Quote : <input type="text" ng-model="quote"></p>
   <button ng-click="c.add();" name="button"  type="button">Add</button>
   <button ng-click="c.retrieve();" name="button" type="button">Retrieve Price</button>
-
-
-
   <table>
-  <tr>
-  <th>Quote</th>
-  <th>Price</th>
-  </tr>
-  <tr ng-repeat="qt in quotes">
-  	<td>{{qt.quote}}</td>
-  	<td>{{qt.price}}</td>
-   	</tr>
+    <tr>
+      <th>Quote</th>
+      <th>Price</th>
+    </tr>
+    <tr ng-repeat="qt in quotes">
+      <td>{{qt.quote}}</td>
+      <td>{{qt.price}}</td>
+    </tr>
   </table>
-
-
-
 </div>
-
 </body>
 </html>
